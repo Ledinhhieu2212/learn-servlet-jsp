@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="https://jakarta.ee/xml/ns/jakartaee"
+	xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_6_0.xsd"
+	id="WebApp_ID" version="6.0">
+	<display-name>DemoServlet</display-name>
+	<welcome-file-list>
+		<welcome-file>index.html</welcome-file>
+		<welcome-file>index.jsp</welcome-file>
+		<welcome-file>index.htm</welcome-file>
+		<welcome-file>default.html</welcome-file>
+		<welcome-file>default.jsp</welcome-file>
+		<welcome-file>default.htm</welcome-file>
+	</welcome-file-list>
+	
+	<!-- Map tren file java -->
+	<servlet>
+		<servlet-name>DemoServlet</servlet-name>
+		<servlet-class>com.trungtamjava.DemoServlet</servlet-class>
+		<load-on-startup>1</load-on-startup>
+	</servlet>
+	
+	<!-- Map dia chi tren trinh duyet -->
+	<servlet-mapping>
+		<servlet-name>DemoServlet</servlet-name>
+		<url-pattern>/demo</url-pattern>
+	</servlet-mapping>
+	
+	<!-- Map tren file java -->
+	<servlet>
+		<servlet-name>ServletConfig</servlet-name>
+		<servlet-class>com.trungtamjava.ServletConfigDemo</servlet-class>
+		<init-param>
+		<param-name>name</param-name>
+		<param-value>trung tam java</param-value>
+		</init-param>
+	</servlet>
+	
+	<!-- Map dia chi tren trinh duyet -->
+	<servlet-mapping>
+		<servlet-name>ServletConfig</servlet-name>
+		<url-pattern>/test-config</url-pattern>
+	</servlet-mapping>
+</web-app>

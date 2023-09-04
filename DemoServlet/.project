@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <projectDescription>
-	<name>WebShopBanQuanAo</name>
+	<name>DemoServlet</name>
 	<comment></comment>
 	<projects>
 	</projects>
@@ -30,7 +30,7 @@
 	</natures>
 	<filteredResources>
 		<filter>
-			<id>1693835948350</id>
+			<id>1693835936027</id>
 			<name></name>
 			<type>30</type>
 			<matcher>
